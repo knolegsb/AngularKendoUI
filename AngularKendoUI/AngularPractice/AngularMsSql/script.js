@@ -1,5 +1,15 @@
 ﻿var app = angular.module("sqlApp", []);
 
+app.controller("countryController", function ($scope, $http, $location, $anchorScroll) {
+    $http.get("EmployeeService.asmx/GetData").then(function (response) {
+        $scope.countries = response.data;
+    });
+    $scope.scrollTo = function (countryName) {
+        $location.hash(countryName);
+        $anchorScroll();
+    }
+});
+
 app.controller("employeeController", function ($scope) {
     $scope.getEmployee = function () {
         $.ajax({

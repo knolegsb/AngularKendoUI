@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularPractice\AngularMsSql\styles.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -495,6 +496,8 @@
     <Content Include="styles\images\kendoui.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AngularPractice\AngularMsSql\City.cs" />
+    <Compile Include="AngularPractice\AngularMsSql\Country.cs" />
     <Compile Include="AngularPractice\AngularMsSql\EmployeeService.asmx.cs">
       <DependentUpon>EmployeeService.asmx</DependentUpon>
       <SubType>Component</SubType>
