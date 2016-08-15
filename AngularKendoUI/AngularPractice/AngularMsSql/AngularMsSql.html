@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../scripts/jquery-1.9.1.min.js"></script>
+    <script src="../../scripts/angular.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        tr, td{
+            padding : 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" ng-controller="employeeController" ng-submit="save()">
+        <div style="text-align: center;">            
+            <img src="../../images/aura.png" />
+        </div>
+        <br />
+        <div style="font-family: Verdana; font-size: 12px; margin-left: 450px;">
+            <table>
+                <tr>
+                    <td style="text-align:right;">ID :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">First Name :</td>
+                    <td><input type="text" id="txtEmpFirstName" class="form-control" ng-model="empFirstName" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">Last Name :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">Address :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">City :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">Pin Code :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">State :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">Country :</td>
+                    <td><input type="text" id="texEmpId" class="form-control" ng-model="empId" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" id="btnSubmit" class="btn btn-primary" value="Submit" />
+                    </td>
+                </tr>                
+            </table>
+            <div>
+                <input type="button" id="btnFetch" value="Fetch" class="btn btn-warning" ng-click="getEmployee()" />
+            </div>
+        </div>
+        <hr />
+
+        <table border="1" style="text-align: center; margin-left: 420px;">
+            <tr>
+                <td>ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Address</td>
+                <td>City</td>
+                <td>Pincode</td>
+                <td>State</td>
+                <td>Country</td>
+            </tr>
+            <tr>
+                <td>{{Id}}</td>
+                <td>{{FirstName}}</td>
+                <td>{{LastName}}</td>
+                <td>{{Address}}</td>
+                <td>{{City}}</td>
+                <td>{{Pincode}}</td>
+                <td>{{State}}</td>
+                <td>{{Country}}</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

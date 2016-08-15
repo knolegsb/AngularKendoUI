@@ -107,14 +107,29 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularPractice\AngularMsSql\AngularMsSql.html" />
+    <Content Include="AngularPractice\AngularMsSql\EmployeeService.asmx" />
+    <Content Include="AngularPractice\AngularMsSql\script.js" />
     <Content Include="app\app.js" />
+    <Content Include="app\dataSource\dataSource.html" />
+    <Content Include="app\globalEvents\globalEvents.html" />
     <Content Include="app\layout\topnav.html" />
+    <Content Include="app\modal\modalWindow.html" />
+    <Content Include="app\welcome\welcome.html" />
+    <Content Include="app\welcome\welcome2.html" />
+    <Content Include="app\welcome\welcome3.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\aura.png" />
     <Content Include="index.html" />
+    <Content Include="AngularPractice\AngularAnchor\AchorScroll.html" />
+    <Content Include="AngularPractice\AngularAnchor\script.js" />
+    <Content Include="AngularPractice\CustomService\script.js" />
+    <Content Include="AngularPractice\CustomService\StringChange.html" />
+    <Content Include="AngularPractice\CustomService\stringService.js" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -477,10 +492,17 @@
     <Content Include="styles\Uniform\sprite_kpi.png" />
     <Content Include="styles\Uniform\sprite_kpi_2x.png" />
     <Content Include="Web.config" />
+    <Content Include="styles\images\kendoui.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AngularPractice\AngularMsSql\EmployeeService.asmx.cs">
+      <DependentUpon>EmployeeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AngularPractice\EmployeeDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

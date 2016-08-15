@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="anchorApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../../scripts/angular.min.js"></script>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <style>
+        div {
+            width: 400px;
+            border: 1px solid black;
+            font-family: Arial;
+            font-size: large;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body ng-controller="anchorController">
+    <input id="top" ng-click="scrollTo('bottom')" type="button" class="btn btn-primary" value="Go to bottom of the page" />
+    
+    <h2>2.1 MVC and MVVM</h2>
+    
+    <p>
+        If you're used to building static websites, you're probably familiar with manually creating HTML piece by piece, integrating your "data" and printing the same HTML over and over again. This could be columns for a grid, a navigation structure, a list of links or images and so on. In this instance, you're used to the pain of manually updating HTML for a template when one little thing changes, you've got to update all further uses of the template to keep things consistent. You've also got to stamp the same chunk of HTML for each navigation item, for example.
+        Take a deep breath, as with Angular we have proper separation of concerns, as well as dynamic HTML. This means our data lives in a Model, our HTML lives as a tiny template to be rendered as a View, and we use a Controller to connect the two, driving Model and View value changes. This means a navigation could be dynamically rendered from a single list element, and automatically repeated for each item in the Model. This is a very basic concept and we'll come onto templating more.
+        The difference between MVC and MVVM, is that MVVM is specifically targeted at user interface development. The View consists of the presentation layer, the ViewModel contains the presentation logic and the Model contains our business logic and data. MVVM was designed to make two-way data binding easier, and frameworks such as AngularJS thrive from it. We'll be focusing on an MVVM path as Angular has been leaning more towards this design in recent years.
+    </p>
+
+    <h2>2.2 Two way data-binding</h2>
+    <p>
+        Two way data-binding is a very simple concept which provides synchronisation between Model and View layers. Model changes propagate to the View, and View changes are instantly reflected back to the Model. This makes the Model the "single source of truth" for maintaining the applications state.
+        Angular use plain old JavaScript Objects for synchronising Model and View data-bindings, which makes updating both a breeze. Angular parses back to JSON and communicates best with a REST endpoint. This approach makes building front-end applications seamless as all the application state is held on the browser, not delivered in pieces from a server and state becomes lost.
+        The way we bind these values is through Angular expressions, which take shape as handlebar templates. We can also bind Models using an attribute called ng-model. Angular uses custom attributes for various APIs that feed back into the Angular core, we'll learn more about these ng-* prefixed attributes as we continue.
+    </p>
+    <h2>2.3 Dependency Injection (DI)</h2>
+    <p>
+        Dependency Injection is a software design pattern that deals with how components get hold of their dependencies. An injection is the passing of a dependency to a dependent Object, these dependencies are often referred to as Services.
+        In AngularJS, we cleverly use the arguments of a function to declare the dependencies we want, and Angular gives them to us. If we forget to pass in a dependency but reference it where we expect it, the Service will be undefined and result in a compile error inside Angular. But don't worry, Angular throws its own errors and makes them very useful to debug.
+    </p>
+    
+    
+    <input id="bottom" type="button" ng-click="scrollTo('top')" class="btn btn-primary" value="Go to top of the page" />
+</body>
+</html>
