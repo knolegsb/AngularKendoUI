@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="sqlApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../scripts/jquery-1.9.1.min.js"></script>
+    <script src="../../scripts/angular.min.js"></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body ng-controller="countryController">
+    <span ng-repeat="country in countries">
+        <button class="btn btn-primary" ng-click="scrollTo(country.Name)">{{country.Name}}</button>
+    </span>
+    <div>
+        <fieldset ng-repeat="country in countries" id="{{country.Name}}">
+            <legend>{{country.Name}}</legend>
+            <ul>
+                <li ng-repeat="city in country.Cities">
+                    {{city.Name}}
+                </li>
+            </ul>
+        </fieldset>        
+    </div>
+</body>
+</html>
