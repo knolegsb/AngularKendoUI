@@ -1,10 +1,18 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<h3> Welcome 3 </h3>
 
-</body>
-</html>
+<div ng-controller="welcome3 as vm">
+    Hello again, again...
+
+    <div>
+        <select kendo-drop-down-list
+                k-options="vm.computerOptions"
+                k-on-change="vm.computerChange(kendoEvent)"
+                k-data-text-field="'name'"
+                ng-model="selectedComputer">
+        </select>
+    </div>
+    <div>
+        <h4 id="choice" ng-show="vm.computerChosen">You chose the {{selectedComputer}}</h4>
+        {{vm.text}}
+    </div>
+</div>

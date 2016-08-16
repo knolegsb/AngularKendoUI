@@ -106,7 +106,14 @@
     <Content Include="AngularPractice\AngularSortingSearching\index.html" />
     <Content Include="AngularPractice\AngularSortingSearching\script.js" />
     <Content Include="AngularPractice\AngularSortingSearching\style.css" />
+    <Content Include="app\dataSource\dataSource.js" />
+    <Content Include="app\doc\UnderstandingCustomization.html" />
+    <Content Include="app\globalEvents\globalEvents.js" />
+    <Content Include="app\order\order.html" />
+    <Content Include="app\order\order.js" />
     <Content Include="app\welcome\welcome.js" />
+    <Content Include="app\welcome\welcome2.js" />
+    <Content Include="app\welcome\welcome3.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

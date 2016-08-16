@@ -1,10 +1,16 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<h2>Modal Window</h2>
 
-</body>
-</html>
+<div>
+    <button class="k-button" ng-click="modal.center().open()">Open Window</button>
+    <div kendo-window="modal"
+         k-title="Status"
+         k-width="400"
+         k-height="300"
+         k-visible="false"
+         k-pinned="false"
+         k-resizable="true"
+         k-modal="true">
+            <h2>Your computer will ship in 5 days</h2>
+            <h4>Federal Parcel Tracking EFX122923Q</h4>
+    </div>
+</div>
