@@ -12,6 +12,7 @@
             .when('/modal', { templateUrl: 'app/modal/modalWindow.html' })
             .when('/globalEvents', { templateUrl: 'app/globalEvents/globalEvents.html' })
             .when('/order', { templateUrl: 'app/order/order.html' })
+            .when('/dataVizualization', {templateUrl: 'app/dataVizualization/dataViz.html'})
             .otherwise({ redirectTo: '/' });
     }
         

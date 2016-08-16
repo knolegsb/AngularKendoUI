@@ -107,6 +107,8 @@
     <Content Include="AngularPractice\AngularSortingSearching\script.js" />
     <Content Include="AngularPractice\AngularSortingSearching\style.css" />
     <Content Include="app\dataSource\dataSource.js" />
+    <Content Include="app\dataVizualization\dataViz.html" />
+    <Content Include="app\dataVizualization\dataViz.js" />
     <Content Include="app\doc\UnderstandingCustomization.html" />
     <Content Include="app\globalEvents\globalEvents.js" />
     <Content Include="app\order\order.html" />
@@ -119,6 +121,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="scripts\jquery-1.9.1.min.map" />
+    <Content Include="app\dataVizualization\sales.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
