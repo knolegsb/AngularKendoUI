@@ -7,15 +7,30 @@
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
     <script src="script.js"></script>
     <link href="style.css" rel="stylesheet" />
+    <style>
+        /*div {
+            padding: 10px;
+        }*/
+    </style>
 </head>
-<body ng-controller="sortingController">
+<body class="container" ng-controller="sortingController">
     <div>
-        Order By : <select ng-model="sortColumn">
+        <div>
+            <div class="col-md-6" style="padding-bottom: 20px;">
+                <label class="label label-info">Order By :</label>
+                <select ng-model="sortColumn" class="form-control">
                     <option value="Name">Name ASC</option>
-                    <option value="Gender">Gender ASC</option> 
+                    <option value="Gender">Gender ASC</option>
                     <option value="DateOfBirth">Date Of Birth ASC</option>
                     <option value="-Salary">Salary DESC</option>
-                   </select>
+                </select>
+            </div>
+            <div class="col-md-6" style="padding-bottom: 20px;">
+                <label class="label label-info">Search :</label> <input type="text" class="form-control" placeholder="Search employees" ng-model="searchText" />
+            </div>
+        </div>
+        <br />
+
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
@@ -26,7 +41,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="employee in employees | orderBy : sortColumn: reverseSort">
+                <tr ng-repeat="employee in employees | orderBy : sortColumn: reverseSort | filter:searchText">
                     <td>{{employee.Name}}</td>
                     <td>{{employee.DateOfBirth | date: "dd/MM/yyyy"}}</td>
                     <td>{{employee.Gender}}</td>

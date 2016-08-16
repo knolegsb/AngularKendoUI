@@ -103,9 +103,9 @@
     <Content Include="AngularPractice\AngularRouting\templates\courses.html" />
     <Content Include="AngularPractice\AngularRouting\templates\home.html" />
     <Content Include="AngularPractice\AngularRouting\templates\students.html" />
-    <Content Include="AngularPractice\AngularSorting\index.html" />
-    <Content Include="AngularPractice\AngularSorting\script.js" />
-    <Content Include="AngularPractice\AngularSorting\style.css" />
+    <Content Include="AngularPractice\AngularSortingSearching\index.html" />
+    <Content Include="AngularPractice\AngularSortingSearching\script.js" />
+    <Content Include="AngularPractice\AngularSortingSearching\style.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
