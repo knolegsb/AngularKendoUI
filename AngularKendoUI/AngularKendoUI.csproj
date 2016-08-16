@@ -96,6 +96,16 @@
   <ItemGroup>
     <Content Include="AngularPractice\AngularMsSql\CityCountry.html" />
     <Content Include="AngularPractice\AngularMsSql\styles.css" />
+    <Content Include="AngularPractice\AngularRouting\app.js" />
+    <Content Include="AngularPractice\AngularRouting\index.html" />
+    <Content Include="AngularPractice\AngularRouting\StudentService.asmx" />
+    <Content Include="AngularPractice\AngularRouting\styles.css" />
+    <Content Include="AngularPractice\AngularRouting\templates\courses.html" />
+    <Content Include="AngularPractice\AngularRouting\templates\home.html" />
+    <Content Include="AngularPractice\AngularRouting\templates\students.html" />
+    <Content Include="AngularPractice\AngularSorting\index.html" />
+    <Content Include="AngularPractice\AngularSorting\script.js" />
+    <Content Include="AngularPractice\AngularSorting\style.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -501,6 +511,11 @@
     <Compile Include="AngularPractice\AngularMsSql\Country.cs" />
     <Compile Include="AngularPractice\AngularMsSql\EmployeeService.asmx.cs">
       <DependentUpon>EmployeeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AngularPractice\AngularRouting\Student.cs" />
+    <Compile Include="AngularPractice\AngularRouting\StudentService.asmx.cs">
+      <DependentUpon>StudentService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="AngularPractice\EmployeeDetails.cs" />

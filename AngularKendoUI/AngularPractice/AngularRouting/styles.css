@@ -1,0 +1,26 @@
+﻿.header{
+    background-color: #bdbdbd;
+    text-align: center;
+}
+
+.footer{
+    background-color: #bdbdbd;
+    text-align: center;
+}
+
+.leftMenu{
+    height: 500px;
+    background-color: #d8d8d8;
+    width: 150px;
+}
+
+.mainContent{
+    height: 500px;
+    background-color: #e6e6e6;
+    width: 650px;
+}
+
+a{
+    display: block;
+    padding: 5px;
+}

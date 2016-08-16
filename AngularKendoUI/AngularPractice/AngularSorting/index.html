@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="sortingModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../../scripts/angular.min.js"></script>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body ng-controller="sortingController">
+    <div>
+        Order By : <select ng-model="sortColumn">
+                    <option value="Name">Name ASC</option>
+                    <option value="Gender">Gender ASC</option> 
+                    <option value="DateOfBirth">Date Of Birth ASC</option>
+                    <option value="-Salary">Salary DESC</option>
+                   </select>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th ng-click="sortData('Name')">Name <div ng-class="getSortClass('Name')"></div></th>
+                    <th ng-click="sortData('DateOfBirth')">Date Of Birth <div ng-class="getSortClass('DateOfBirth')"></div></th>
+                    <th ng-click="sortData('Gender')">Gender <div ng-class="getSortClass('Gender')"></div></th>
+                    <th ng-click="sortData('Salary')">Salary <div ng-class="getSortClass('Salary')"></div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees | orderBy : sortColumn: reverseSort">
+                    <td>{{employee.Name}}</td>
+                    <td>{{employee.DateOfBirth | date: "dd/MM/yyyy"}}</td>
+                    <td>{{employee.Gender}}</td>
+                    <td>{{employee.Salary}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
