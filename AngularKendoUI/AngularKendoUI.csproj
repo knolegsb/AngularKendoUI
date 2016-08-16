@@ -106,6 +106,7 @@
     <Content Include="AngularPractice\AngularSortingSearching\index.html" />
     <Content Include="AngularPractice\AngularSortingSearching\script.js" />
     <Content Include="AngularPractice\AngularSortingSearching\style.css" />
+    <Content Include="app\welcome\welcome.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
